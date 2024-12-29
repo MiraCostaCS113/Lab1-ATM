@@ -25,3 +25,10 @@ replay_pid*
 
 # macos Files
 .DS_STORE
+/Lab1-ATM.iml
+/out/
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/vcs.xml
+/.idea/modules.xml
+/.idea/
