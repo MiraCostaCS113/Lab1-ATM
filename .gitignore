@@ -32,3 +32,5 @@ replay_pid*
 /.idea/vcs.xml
 /.idea/modules.xml
 /.idea/
+/.gradle/
+/build/
