@@ -58,7 +58,7 @@ public class SavingsAccount extends Account {
      * @return double New account balance
      */
     public double addInterest() {
-        double amount = this.balance * this.customer.getSavingsInterest();
+        double amount = this.balance * this.customer.getSavingInterest();
         this.transactions[this.tranIndex++] = new Transaction(this.customer.getCustomerNumber(), 0, amount, "INT");
         this.balance = this.balance + amount;
         return this.balance;

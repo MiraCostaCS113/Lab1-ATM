@@ -6,9 +6,9 @@
 public class CheckingAccount extends Account {
 
     /** Creates a new instance of CheckingAccount using super */
-    // public CheckingAccount(Customer customer) {
-
-    // }
+    public CheckingAccount(Customer customer) {
+        super(customer);
+    }
 
     /***********************************************
      * Adds amount to balance
@@ -23,10 +23,10 @@ public class CheckingAccount extends Account {
      *         add one to the tranIndex
      *         return the balance
      */
-    // @Override
-    // public double deposit(double amount){
-
-    // }
+    @Override
+    public double deposit(double amount) {
+        return 0.0;
+    }
 
     /***********************************************
      * Substracts amount from balance
@@ -45,10 +45,10 @@ public class CheckingAccount extends Account {
      *         subtract the amount from the balance and return the balance, remeber
      *         to add 1 to the tranIndex
      */
-    // @Override
-    // public double withdrawal(double amount){
-
-    // }
+    @Override
+    public double withdrawal(double amount) {
+        return 0.0;
+    }
 
     /***********************************************
      * Adds amount to balance
@@ -62,6 +62,8 @@ public class CheckingAccount extends Account {
      *         "INT"
      *         add the amount to the balance and return the balance
      */
-    // public double addInterest(){
-    // }
+    public double addInterest() {
+        return 0.0;
+    }
+
 }
