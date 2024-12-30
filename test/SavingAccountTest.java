@@ -15,4 +15,15 @@ public class SavingAccountTest {
         // Assert
         Assertions.assertEquals(0, initialBalance, "Initial balance should be zero.");
     }
+
+    @Test
+    public void validateDepositToSavingAccount() {
+        // Arrange
+        Adult accountHolder = new Adult("John Doe", "123 Main Street", 30, "555-555-1234");
+        SavingsAccount savingsAccount = new SavingsAccount(accountHolder);
+
+        savingsAccount.deposit(100);
+
+        Assertions.assertEquals(102, savingsAccount.getBalance(), "Balance should be 100.");
+    }
 }
