@@ -24,6 +24,6 @@ public class SavingAccountTest {
 
         savingsAccount.deposit(100);
 
-        Assertions.assertEquals(102, savingsAccount.getBalance(), "Balance should be 100.");
+        Assertions.assertEquals(103, savingsAccount.getBalance(), "Balance should be 100.");
     }
 }

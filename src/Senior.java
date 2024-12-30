@@ -1,52 +1,42 @@
+
 /*
  * Senior.java
  */
-// create Senior class that extends from Customer
+// create Adult class that extends from Customer
 public class Senior extends Customer {
 
-    public Senior(String customerName, String customerAddress, int customerAge, String customerPhoneNumber) {
-        super(customerName, customerAddress, customerAge, customerPhoneNumber);
+    public static final double SAVINGS_INTEREST = 0.04;
+    public static final double CHECK_INTEREST = 0.01;
+    public static final double CHECK_CHARGE = 0.01;
+    public static final double OVERDRAFT_PENALTY = 25.0;
+
+    /** Creates a new instance of Adult */
+
+    public Senior(String cName, String cAddress, int cAge, String cTelephoneNumber){
+        super(cName, cAddress, cAge, cTelephoneNumber);
     }
 
-    @Override
-    public String getType() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getType'");
+    /** getter for getType return "Senior" */
+    public String getType(){
+        return "Senior";
     }
 
-    @Override
-    public double getSavingInterest() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getSavingInterest'");
+    /** getter for Savings Interest */
+    public double getSavingsInterest(){
+        return SAVINGS_INTEREST;
     }
 
-    @Override
-    public double getCheckInterest() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getCheckInterest'");
+    /** getter for Check Interest */
+    public double getCheckInterest(){
+        return CHECK_INTEREST;
+    }
+    /** getter for Check Charge */
+    public double getCheckCharge(){
+        return CHECK_CHARGE;
     }
 
-    @Override
-    public double getCheckCharge() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getCheckCharge'");
+    /** getter for OverdraftPenalty */
+    public double getOverdraftPenalty(){
+        return OVERDRAFT_PENALTY;
     }
-
-    @Override
-    public double getOverdraftPenalty() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getOverdraftPenalty'");
-    }
-
 }
-/** Creates a new instance of Senior */
-
-/** getter for getType return "Senior" */
-
-/** getter for Savings Interest */
-
-/** getter for Check Interest */
-
-/** getter for Check Charge */
-
-/** getter for OverdraftPenalty */

@@ -3,15 +3,25 @@
  *
  */
 public class Transaction {
+    private String customerNumber;
+    private int transactionType;
+    private double amount;
+    private String date;
+    private String fees;
 
-    public Transaction(String customerNumber, int i, double amount, String string) {
-        // TODO Auto-generated constructor stub
-    }
 
     /** Creates a new instance of Transaction */
-   
-   
-   
-   
-    
-   }
+
+    public Transaction(String customerNumber, int tranType, double amount, String fees){
+        this.customerNumber = customerNumber;
+        this.transactionType = tranType;
+        this.amount = amount;
+        this.fees = fees;
+    }
+
+    public void processTran(){
+    }
+
+
+
+}
